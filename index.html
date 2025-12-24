@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Central College - Connecting Industrial, Welding, Culinary Arts, and AI departments with modern learning tools">
+    <title>Central College - Modern Education Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">CC</div>
+                <span>Central College</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#departments" class="nav-link">Departments</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#announcements" class="nav-link">Announcements</a></li>
+                <li><a href="#collaboration" class="nav-link">Collaborate</a></li>
+                <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+                    <span class="dark-mode-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Central College</h1>
+            <p>Connecting all departments through modern technology and collaborative learning. Your journey to excellence starts here.</p>
+            
+            <div class="hero-actions">
+                <a href="#departments" class="btn btn-primary">Explore Departments</a>
+                <a href="#dashboard" class="btn btn-secondary">Student Dashboard</a>
+                <a href="#courses" class="btn btn-outline">Browse Courses</a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-card glass">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Departments</span>
+                </div>
+                <div class="stat-card glass">
+                    <span class="stat-number">2,500+</span>
+                    <span class="stat-label">Students</span>
+                </div>
+                <div class="stat-card glass">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Courses</span>
+                </div>
+                <div class="stat-card glass">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPARTMENTS SECTION -->
+    <section class="section" id="departments">
+        <div class="section-header">
+            <h2 class="section-title">Our Departments</h2>
+            <p class="section-subtitle">Explore our four cutting-edge departments, each designed to prepare you for the future</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="department-card" data-department="industrial">
+                <div class="department-card-bg" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);"></div>
+                <div class="department-card-overlay">
+                    <h3>🏭 Industrial Technology</h3>
+                    <p>Advanced manufacturing, automation, and industrial systems</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="department-card" data-department="welding">
+                <div class="department-card-bg" style="background: linear-gradient(135deg, #dc2626 0%, #f97316 100%);"></div>
+                <div class="department-card-overlay">
+                    <h3>🔥 Welding Technology</h3>
+                    <p>Professional welding techniques and certifications</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="department-card" data-department="culinary">
+                <div class="department-card-bg" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%);"></div>
+                <div class="department-card-overlay">
+                    <h3>👨‍🍳 Culinary Arts</h3>
+                    <p>Professional cooking, baking, and hospitality management</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="department-card" data-department="ai">
+                <div class="department-card-bg" style="background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);"></div>
+                <div class="department-card-overlay">
+                    <h3>🤖 AI & Technology</h3>
+                    <p>Artificial intelligence, machine learning, and data science</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK ACCESS SECTION -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="section-header">
+            <h2 class="section-title">Quick Access</h2>
+            <p class="section-subtitle">Everything you need, right at your fingertips</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    📊
+                </div>
+                <h3 class="card-title">Dashboard</h3>
+                <p class="card-description">View your courses, grades, assignments, and schedule in one place</p>
+                <a href="#dashboard" class="btn btn-primary">Go to Dashboard</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    📢
+                </div>
+                <h3 class="card-title">Announcements</h3>
+                <p class="card-description">Stay updated with the latest news and important notifications</p>
+                <a href="#announcements" class="btn btn-primary">View Announcements</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    🤝
+                </div>
+                <h3 class="card-title">Collaboration</h3>
+                <p class="card-description">Connect with peers, join study groups, and share resources</p>
+                <a href="#collaboration" class="btn btn-primary">Start Collaborating</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED COURSES SECTION -->
+    <section class="section" id="courses">
+        <div class="section-header">
+            <h2 class="section-title">Featured Courses</h2>
+            <p class="section-subtitle">Popular courses across all departments</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon" style="background: var(--industrial);">
+                    ⚙️
+                </div>
+                <h3 class="card-title">Advanced Manufacturing</h3>
+                <p class="card-description">
+                    <strong>Department:</strong> Industrial Technology<br>
+                    <strong>Duration:</strong> 12 weeks<br>
+                    <strong>Level:</strong> Intermediate
+                </p>
+                <div class="flex-between">
+                    <span style="color: var(--primary-blue); font-weight: 600;">45 Students</span>
+                    <a href="#" class="btn btn-outline">Enroll Now</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: var(--welding);">
+                    🔧
+                </div>
+                <h3 class="card-title">TIG Welding Certification</h3>
+                <p class="card-description">
+                    <strong>Department:</strong> Welding Technology<br>
+                    <strong>Duration:</strong> 8 weeks<br>
+                    <strong>Level:</strong> Advanced
+                </p>
+                <div class="flex-between">
+                    <span style="color: var(--primary-blue); font-weight: 600;">32 Students</span>
+                    <a href="#" class="btn btn-outline">Enroll Now</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: var(--culinary);">
+                    🍰
+                </div>
+                <h3 class="card-title">Professional Pastry Arts</h3>
+                <p class="card-description">
+                    <strong>Department:</strong> Culinary Arts<br>
+                    <strong>Duration:</strong> 10 weeks<br>
+                    <strong>Level:</strong> Beginner
+                </p>
+                <div class="flex-between">
+                    <span style="color: var(--primary-blue); font-weight: 600;">58 Students</span>
+                    <a href="#" class="btn btn-outline">Enroll Now</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: var(--ai);">
+                    🧠
+                </div>
+                <h3 class="card-title">Machine Learning Fundamentals</h3>
+                <p class="card-description">
+                    <strong>Department:</strong> AI & Technology<br>
+                    <strong>Duration:</strong> 14 weeks<br>
+                    <strong>Level:</strong> Intermediate
+                </p>
+                <div class="flex-between">
+                    <span style="color: var(--primary-blue); font-weight: 600;">67 Students</span>
+                    <a href="#" class="btn btn-outline">Enroll Now</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: var(--industrial);">
+                    🏗️
+                </div>
+                <h3 class="card-title">Industrial Automation</h3>
+                <p class="card-description">
+                    <strong>Department:</strong> Industrial Technology<br>
+                    <strong>Duration:</strong> 16 weeks<br>
+                    <strong>Level:</strong> Advanced
+                </p>
+                <div class="flex-between">
+                    <span style="color: var(--primary-blue); font-weight: 600;">38 Students</span>
+                    <a href="#" class="btn btn-outline">Enroll Now</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: var(--culinary);">
+                    🍽️
+                </div>
+                <h3 class="card-title">Restaurant Management</h3>
+                <p class="card-description">
+                    <strong>Department:</strong> Culinary Arts<br>
+                    <strong>Duration:</strong> 12 weeks<br>
+                    <strong>Level:</strong> Advanced
+                </p>
+                <div class="flex-between">
+                    <span style="color: var(--primary-blue); font-weight: 600;">41 Students</span>
+                    <a href="#" class="btn btn-outline">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-primary">View All Courses</a>
+        </div>
+    </section>
+
+    <!-- STUDENT COLLABORATION HIGHLIGHTS -->
+    <section class="section" id="collaboration" style="background: var(--bg-secondary);">
+        <div class="section-header">
+            <h2 class="section-title">Student Collaboration</h2>
+            <p class="section-subtitle">Connect, share, and learn together</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    💬
+                </div>
+                <h3 class="card-title">Discussion Forums</h3>
+                <p class="card-description">Join topic-based discussions, ask questions, and share knowledge with peers across all departments</p>
+                <div class="flex-between">
+                    <span style="color: var(--text-tertiary);">1,234 Active Threads</span>
+                    <a href="#" class="btn btn-secondary">Join Discussion</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                    👥
+                </div>
+                <h3 class="card-title">Study Groups</h3>
+                <p class="card-description">Form or join study groups for your courses. Collaborate on projects and prepare for exams together</p>
+                <div class="flex-between">
+                    <span style="color: var(--text-tertiary);">89 Active Groups</span>
+                    <a href="#" class="btn btn-secondary">Find Groups</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                    📁
+                </div>
+                <h3 class="card-title">Resource Library</h3>
+                <p class="card-description">Access shared notes, study materials, and resources uploaded by students and faculty</p>
+                <div class="flex-between">
+                    <span style="color: var(--text-tertiary);">2,456 Resources</span>
+                    <a href="#" class="btn btn-secondary">Browse Library</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                    🎯
+                </div>
+                <h3 class="card-title">Project Collaboration</h3>
+                <p class="card-description">Work together on group projects with built-in tools for task management and file sharing</p>
+                <div class="flex-between">
+                    <span style="color: var(--text-tertiary);">156 Active Projects</span>
+                    <a href="#" class="btn btn-secondary">Start Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECENT ANNOUNCEMENTS -->
+    <section class="section" id="announcements">
+        <div class="section-header">
+            <h2 class="section-title">Recent Announcements</h2>
+            <p class="section-subtitle">Stay informed about the latest updates</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                    <span style="background: var(--industrial); color: white; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem; font-weight: 600;">Industrial</span>
+                    <span style="color: var(--text-tertiary); font-size: 0.875rem;">2 hours ago</span>
+                </div>
+                <h3 class="card-title">New CNC Machines Installed</h3>
+                <p class="card-description">The Industrial Technology department has received state-of-the-art CNC machines. Training sessions start next week.</p>
+                <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+            
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                    <span style="background: var(--ai); color: white; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem; font-weight: 600;">AI & Tech</span>
+                    <span style="color: var(--text-tertiary); font-size: 0.875rem;">5 hours ago</span>
+                </div>
+                <h3 class="card-title">AI Workshop This Friday</h3>
+                <p class="card-description">Join us for a hands-on workshop on neural networks and deep learning. Limited seats available!</p>
+                <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+            
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                    <span style="background: var(--culinary); color: white; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem; font-weight: 600;">Culinary</span>
+                    <span style="color: var(--text-tertiary); font-size: 0.875rem;">1 day ago</span>
+                </div>
+                <h3 class="card-title">Guest Chef Masterclass</h3>
+                <p class="card-description">Renowned chef Maria Rodriguez will conduct a special masterclass on French cuisine techniques.</p>
+                <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-primary">View All Announcements</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="background: var(--bg-secondary); padding: 3rem 2rem; margin-top: 4rem;">
+        <div style="max-width: 1400px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                <div>
+                    <div class="logo" style="margin-bottom: 1rem;">
+                        <div class="logo-icon">CC</div>
+                        <span>Central College</span>
+                    </div>
+                    <p style="color: var(--text-secondary);">Empowering students through innovative education and collaborative learning.</p>
+                </div>
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#departments">Departments</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#courses">Courses</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#dashboard">Dashboard</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#announcements">Announcements</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Departments</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#">Industrial Technology</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#">Welding Technology</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#">Culinary Arts</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#">AI & Technology</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Contact</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">📧 info@centralcollege.edu</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">📞 (555) 123-4567</p>
+                    <p style="color: var(--text-secondary);">📍 123 Education St, Learning City</p>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid var(--border-color); padding-top: 2rem; text-align: center; color: var(--text-tertiary);">
+                <p>&copy; 2025 Central College. All rights reserved. Built with modern web technologies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
